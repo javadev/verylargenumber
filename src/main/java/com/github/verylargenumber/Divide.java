@@ -1,6 +1,11 @@
 package com.github.verylargenumber;
 
 class Divide extends BinaryOperation {
+    private final int precision;
+
+    public Divide(int precision) {
+        this.precision = precision;
+    }
 
     @Override
     Number perform(Number n1, Number n2) {
@@ -10,7 +15,7 @@ class Divide extends BinaryOperation {
         final DivideWithRest divideBeforePoint = new DivideWithRest();
         final Number beforePoint = divideBeforePoint.perform(n1, n2);
         final Number rest = divideBeforePoint.getRest();
-        if( rest.isZero() ) {
+        if (rest.isZero()) {
             return beforePoint;
         }
 
@@ -19,8 +24,8 @@ class Divide extends BinaryOperation {
             count++;
             rest.multiplyTo10(1);
         }
-        rest.multiplyTo10(3);
-        count += 3;
+        rest.multiplyTo10(precision);
+        count += precision;
 
         beforePoint.multiplyTo10(count);
 
