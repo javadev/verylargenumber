@@ -27,4 +27,10 @@ public abstract class VeryLargeNumber {
         return new Divide(precision).perform(new Factory().createFrom(s1),
                 new Factory().createFrom(s2)).toString();
     }
+
+    public static void main(String[] args) {
+        final String message = "Verylargenumber is a library to support of arithmetics for very big numbers.\n\n"
+            + "For docs, license, tests, and downloads, see: https://github.com/javadev/verylargenumber";
+        System.out.println(message);
+    }
 }
