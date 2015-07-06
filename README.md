@@ -1,6 +1,6 @@
 # verylargenumber
-The library to support of arithmetics for very big numbers
 
+[![Maven Central](https://img.shields.io/maven-central/v/com.github.javadev/verylargenumber.svg)](http://search.maven.org/#search%7Cga%7C1%7Cg%3A%22com.github.javadev%22%20AND%20a%3A%22verylargenumber%22)
 [![Build Status](https://secure.travis-ci.org/javadev/verylargenumber.png)](https://travis-ci.org/javadev/verylargenumber)
 [![Coverage Status](https://coveralls.io/repos/javadev/verylargenumber/badge.png?branch=master)](https://coveralls.io/r/javadev/verylargenumber)
 
