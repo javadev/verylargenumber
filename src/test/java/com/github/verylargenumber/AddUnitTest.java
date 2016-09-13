@@ -21,6 +21,7 @@ public class AddUnitTest {
         assertEquals("71945", add("72663", "-718"));
         assertEquals("-495116", add("-500034", "4918"));
         assertEquals("0", add("-0.23", "0.23"));
+        assertEquals("0.3", add("0.1", "0.2"));
         assertEquals("7909.5991", add("7892.81", "16.7891"));
         assertEquals("0.9999921796", add("-0.0000078204", "1"));
     }
